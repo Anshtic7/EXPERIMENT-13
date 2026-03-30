@@ -54,55 +54,51 @@ Thus, data preprocessing improves data quality, reliability, and accuracy of ana
 
 **Explanation of Each Function**
 
-1. np.nan:- It represents missing or undefined numerical values in NumPy and Pandas.
+1. **np.nan**:- It represents missing or undefined numerical values in NumPy and Pandas.
 
-Purpose:
+Purpose:- Marks missing data in datasets and it helps Pandas detect and process missing values.
 
-Marks missing data in datasets
-
-Helps Pandas detect and process missing values.
-
-2. isna():- This function checks whether each element in the DataFrame is missing (NaN).
+2. **isna()**:- This function checks whether each element in the DataFrame is missing (NaN).
 
 Output:- Returns True if the value is missing and False otherwise.
 
-3. notna():- This function is the opposite of isna(). It checks whether values are not missing.
+3.**notna()**:- This function is the opposite of isna(). It checks whether values are not missing.
 
 Purpose:- Identifies valid data entries.
 
-4. isna().sum():- This function counts the number of missing values in each column.
+4. **isna().sum()**:- This function counts the number of missing values in each column.
 
 Purpose:- Helps determine how many values are missing in each column.
 
-5. isna().sum(axis=1):- This counts missing values row-wise.
+5. **isna().sum(axis=1)**:- This counts missing values row-wise.
 
 Purpose:- Identifies rows that contain missing data.
 
-6. dropna():- This function removes rows that contain missing values.
+6. **dropna()**:- This function removes rows that contain missing values.
 
 Purpose: Removes incomplete records from the dataset.
 
-7. dropna(axis=1):- Removes columns that contain missing values.
+7. **dropna(axis=1)**:- Removes columns that contain missing values.
 
 Purpose:- Used when entire columns contain too many missing values.
 
-8. fillna():- This function replaces missing values with a specified value.
+8. **fillna()**:- This function replaces missing values with a specified value.
 
 Purpose:- Fills missing data with a constant or calculated value.
 
-9. replace():- This function replaces specific values in the dataset.
+9. **replace()**:- This function replaces specific values in the dataset.
 
 Purpose:- Converts symbols like "-" into NaN so they can be processed as missing values.
 
-10. pd.to_numeric():- Converts values into numeric format.
+10. **pd.to_numeric()**:- Converts values into numeric format.
 
 Purpose:- Converts strings to numbers and Invalid values are converted to NaN.
 
-11. str.upper():- Converts all text to uppercase.
+11. **str.upper()**:- Converts all text to uppercase.
 
 Purpose:- Fixes inconsistent text formatting such as cse and CSE.
 
-12. pd.to_datetime():- Converts string values into datetime format.
+12. **pd.to_datetime()**:- Converts string values into datetime format.
 
 Purpose:- Standardizes date formats for analysis.
 
