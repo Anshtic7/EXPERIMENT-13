@@ -62,7 +62,7 @@ Purpose:- Marks missing data in datasets and it helps Pandas detect and process 
 
 Output:- Returns True if the value is missing and False otherwise.
 
-3.**notna()**:- This function is the opposite of isna(). It checks whether values are not missing.
+3. **notna()**:- This function is the opposite of isna(). It checks whether values are not missing.
 
 Purpose:- Identifies valid data entries.
 
